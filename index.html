@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Based on Division and Roll Number</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Quiz Generator</h1>
+        <form id="quiz-form">
+            <label for="division">Enter Your Division:</label>
+            <select id="division" required>
+                <option value="">Select Division</option>
+                <option value="CS1">CS1</option>
+                <option value="ME">ME</option>
+            </select>
+            <label for="rollNumber">Enter Your Roll Number:</label>
+            <input type="number" id="rollNumber" required>
+            <button type="submit">Generate Quiz</button>
+        </form>
+        <div id="quiz-container" class="quiz-container">
+            <h2>Your Questions:</h2>
+            <ul id="questions-list"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
